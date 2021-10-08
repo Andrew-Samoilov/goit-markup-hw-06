@@ -428,7 +428,34 @@
     <!-- модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut qui suscipit laudantium dolor exercitationem. Consequatur, architecto iste a accusamus minima voluptatibus eius quisquam alias minus repellendus ipsa amet, cum tempore.</p>
+        <form name="signup_form" autocomplete="on" novalidate>
+          <h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <div>
+            <label>
+              Имя
+              <input type="text" name="username" placeholder="Jacob Mercer" autofocus />
+            </label>
+            <label>
+              Телефон
+              <input type="tel" name="phone" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" />
+            </label>
+            <label>
+              Коментарий
+              <textarea name="comment" rows="5" placeholder="Ведите текст"></textarea>
+            </label>
+          </div>
+          <label>
+            <input type="checkbox" name="oferta" value="checkbox-yes">
+            Соглашаюсь с рассылкой и принимаю Условия договора
+          </label>
+          <button type="submit button">Отправить</button>
+
+        </form>
+        
         <button class="btn-close" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/sprite.svg#close-btn"></use>
