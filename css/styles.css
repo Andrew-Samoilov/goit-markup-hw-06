@@ -643,7 +643,10 @@ li.item {
 }
 .form {
   padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .label {
   display: flex;
   flex-direction: column;
