@@ -641,14 +641,36 @@ li.item {
 .btn-close:hover {
   color: var(--accent);
 }
+/* форма */
 .form {
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.label {
+.form-field {
+  /* outline: 1px solid blue; */
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+textarea,
+.form-field input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-field input:active,
+.form-field input:hover,
+.form-field input:focus {
+  border: 1px solid #2196f3;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+textarea {
+  resize: none;
 }

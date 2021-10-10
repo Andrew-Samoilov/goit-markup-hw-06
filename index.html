@@ -429,7 +429,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" role="group">
         <form name="signup_form" autocomplete="on" novalidate>
-          <h2>Оставьте свои данные, мы вам перезвоним</h2>
+          <h3>Оставьте свои данные, мы вам перезвоним</h3>
           <div>
             <div class="form-field">
               <label for="name">Имя</label>
@@ -437,21 +437,20 @@
             </div>
 
             <div class="form-field">
-              <label>Телефон
-                <input type="tel" name="phone" />
-              </label>
+              <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel"/>              
             </div>
 
             <div class="form-field">
-              <label>
-                Email
-                <input type="email" name="email" />
-              </label>
+              <label for="email">Email</label>
+                <input type="email" name="email" id="email"/> 
             </div>
-            <label>
-              Коментарий
-              <textarea name="comment" rows="5" placeholder="Ведите текст"></textarea>
-            </label>
+
+            <div class="form-field">
+              <label for="comment">Коментарий</label>
+              <textarea name="comment" rows="5" placeholder="Ведите текст" id="comment"></textarea>
+            </div>
+        
           </div>
           <label>
             <input type="checkbox" name="oferta" value="checkbox-yes">
