@@ -428,8 +428,8 @@
     <!-- модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" role="group">
-        <form name="signup_form" autocomplete="on" novalidate>
-          <h3>Оставьте свои данные, мы вам перезвоним</h3>
+        <form name="signup_form" autocomplete="off" novalidate>
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div>
             <div class="form-field">
               <label for="name">Имя</label>
@@ -452,11 +452,14 @@
             </div>
         
           </div>
-          <label>
-            <input type="checkbox" name="oferta" value="checkbox-yes">
-            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-          </label>
-          <button type="submit button">Отправить</button>
+          <div class="form-field">
+              <input type="checkbox" name="oferta" id="checkbox" value="oferta">
+              <label for="oferta">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+          </div>
+          <div class="form-button">
+            <button type="submit button" class="button form-btn">Отправить</button>
+          </div>
+          
 
         </form>
         
