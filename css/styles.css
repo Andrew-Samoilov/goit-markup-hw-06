@@ -234,13 +234,15 @@ button {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 .footer-connect {
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
   color: var(--white-color);
-  padding-top: 12px;
+
+  margin-bottom: 20px;
 }
 
 .footer-sosial {
@@ -664,6 +666,8 @@ li.item {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  fill: var(--primary-text-color);
+  position: relative;
 }
 
 textarea,
@@ -677,6 +681,7 @@ textarea,
 .form-field input:hover,
 .form-field input:focus {
   border: 1px solid var(--accent);
+ 
 }
 
 .form-field label,
@@ -716,9 +721,16 @@ textarea {
   display: flex;
   flex-wrap: wrap;
 }
+.form-icon {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  fill: currentColor;
+}
 
 .footer-input {
   width: 350px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
@@ -731,5 +743,6 @@ textarea {
 .footer-input:active,
 .footer-input:hover,
 .footer-input:focus {
+  color: var(--accent);
   border: 1px solid var(--accent);
 }

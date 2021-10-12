@@ -425,18 +425,14 @@
         </div>
 
         <div class="footer-submit">
-          <form name="submit_form" autocomplete="off" novalidate>
-            <p class="footer-connect">Подпишитесь на рассылку</p>
-            <div class="footer-form-wrapper">       
-              <input class="footer-input" type="email" id="footer-email" placeholder="E-mail">
-            
+          <form class="footer-form-wrapper" autocomplete="off"  novalidate>
+            <label for="footer-email" class="footer-connect">Подпишитесь на рассылку</label>      
+              <input class="footer-input" type="email" id="footer-email" placeholder="E-mail">    
                 <button type="submit" class="button form-btn">Подписаться
                   <svg width="24" height="24">
                     <use href="./images/icons.svg#send-btn"></use>
                   </svg>
-                </button>
-            
-            </div>
+                </button>         
           </form>
         </div>
 
@@ -450,8 +446,11 @@
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div>
             <div class="form-field">
-              <label for="name">Имя</label>
-              <input type="text" name="name" id="name"/>              
+              <label for="name">Имя</label>             
+              <input type="text" name="name" id="name"/>  
+              <svg width="12" height="12" class="form-icon">
+                <use href="./images/icons.svg#person"></use>
+              </svg>            
             </div>
 
             <div class="form-field">
