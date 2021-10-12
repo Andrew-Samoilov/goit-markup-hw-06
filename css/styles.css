@@ -712,6 +712,7 @@ textarea {
   fill: var(--white-color);
   align-items: center;
   justify-content: center
+ 
 }
 .form-btn svg{
   margin-left: 10px;
