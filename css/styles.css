@@ -666,8 +666,8 @@ li.item {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  fill: var(--primary-text-color);
   position: relative;
+  color: var(--secondary-color);
 }
 
 textarea,
@@ -681,7 +681,13 @@ textarea,
 .form-field input:hover,
 .form-field input:focus {
   border: 1px solid var(--accent);
- 
+  color: var(--accent);
+}
+/* Вроды раніше цю діч робив по іншому ?*/
+.form-field input:active ~ svg,
+.form-field input:hover ~ svg,
+.form-field input:focus ~ svg {
+  color: var(--accent);
 }
 
 .form-field label,
@@ -709,12 +715,10 @@ textarea {
   color: var(--white-color);
   width: 200px;
   height: 50px;
-  fill: var(--white-color);
   align-items: center;
-  justify-content: center
- 
+  justify-content: center;
 }
-.form-btn svg{
+.form-btn svg {
   margin-left: 10px;
 }
 
@@ -744,6 +748,5 @@ textarea {
 .footer-input:active,
 .footer-input:hover,
 .footer-input:focus {
-  color: var(--accent);
   border: 1px solid var(--accent);
 }
