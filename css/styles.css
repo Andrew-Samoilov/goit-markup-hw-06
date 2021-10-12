@@ -676,7 +676,7 @@ textarea,
 .form-field input:active,
 .form-field input:hover,
 .form-field input:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent);
 }
 
 .form-field label,
@@ -697,6 +697,7 @@ textarea {
 }
 
 .form-btn {
+  display: flex;
   background: var(--accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -704,13 +705,13 @@ textarea {
   width: 200px;
   height: 50px;
   fill: var(--white-color);
+  align-items: center;
+  justify-content: center
+}
+.form-btn svg{
+  margin-left: 10px;
 }
 
-.form-button {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
 .footer-form-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -725,4 +726,10 @@ textarea {
   background: transparent;
   padding: 15px 16px;
   margin-right: 12px;
+}
+
+.footer-input:active,
+.footer-input:hover,
+.footer-input:focus {
+  border: 1px solid var(--accent);
 }
