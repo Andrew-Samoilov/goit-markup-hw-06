@@ -445,6 +445,7 @@
         <form  autocomplete="off" novalidate>
           <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
           <div>
+            
             <div class="form-field">
               <label for="name">Имя</label>             
               <input type="text" name="name" id="name"/>  
@@ -475,14 +476,13 @@
             </div>
         
           </div>
-          <div class="form-field">
+         
               <input type="checkbox" name="oferta" id="oferta" value="oferta">
-              <label for="oferta">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-          </div>
-          <!-- <div class="form-button"> -->
-            <button type="submit" class="button form-btn">Отправить</button>
-          <!-- </div>  -->
-
+              <label class="modal-checkbox" for="oferta">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+     
+  
+            <button type="submit" class="button form-btn form-btn-send">Отправить</button>
+     
         </form>
         
         <button class="btn-close" data-modal-close>
