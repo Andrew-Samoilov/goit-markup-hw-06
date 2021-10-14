@@ -667,32 +667,35 @@ li.item {
   flex-direction: column;
   margin-bottom: 10px;
   position: relative;
-  color: var(--secondary-color);
+  color: var(--primary-text-color);
 }
 
-textarea,
-.form-field input {
+.form-input {
   width: 100%;
   outline: none;
   padding: 12px 16px 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form-field input:active,
-.form-field input:hover,
-.form-field input:focus {
+
+.form-comment:active,
+.form-comment:focus,
+.form-comment:hover,
+.form-input:active,
+.form-input:hover,
+.form-input:focus {
   border: 1px solid var(--accent);
-  color: var(--accent);
 }
-/* Вроды раніше цю діч робив по іншому ?*/
-.form-field input:active ~ svg,
-.form-field input:hover ~ svg,
-.form-field input:focus ~ svg {
+/* Вродi раніше цю діч робив по іншому ?*/
+.form-input:active ~ svg,
+.form-input:hover ~ svg,
+.form-input:focus ~ svg {
   color: var(--accent);
 }
 
 .form-field label,
 .form-field placeholder {
+  color: var(--secondary-color);
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -700,16 +703,17 @@ textarea,
   letter-spacing: 0.01em;
 }
 
-.form-field::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-
-textarea {
+.form-comment {
+  width: 100%;
+  min-height: 120px;
   resize: none;
-  padding-left: 16px;
-  height: 120px;
+
+  padding: 12px 16px;
+  margin-bottom: 20px;
+
+  outline: none;
+  border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
 }
 
 .form-btn {
@@ -739,9 +743,23 @@ form .form-btn svg {
 }
 .form-icon {
   position: absolute;
-  bottom: 14px;
-  left: 14px;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
   fill: currentColor;
+}
+.form-icon-center {
+  position: relative;
+}
+
+.modal-checkbox {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.modal-checkbox a {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 .footer-input {
