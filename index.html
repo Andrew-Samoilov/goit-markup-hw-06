@@ -443,12 +443,11 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" role="group">
         <form  autocomplete="off" novalidate>
-          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-          <div>
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>         
             
             <div class="form-field">
               <label for="name">Имя</label>        
-              <span class="form-icon-center">     
+              <span class="input-wrapper">     
                 <input class="form-input" type="text" name="name" id="name"/>  
                 <svg class="form-icon" width="12" height="12">
                   <use href="./images/icons.svg#person"></use>
@@ -458,7 +457,7 @@
 
             <div class="form-field">
               <label for="tel">Телефон</label>
-              <span class="form-icon-center">
+              <span class="input-wrapper">
                 <input class="form-input" type="tel" name="tel" id="tel"/>              
                   <svg class="form-icon" width="14" height="14">
                     <use href="./images/icons.svg#tel"></use>
@@ -468,22 +467,24 @@
 
             <div class="form-field">
               <label for="email">Email</label>
-              <span class="form-icon-center"><input class="form-input" type="email" name="email" id="email" />
+              <span class="input-wrapper"><input class="form-input" type="email" name="email" id="email" />
                 <svg class="form-icon" width="16" height="12">
                   <use href="./images/icons.svg#mail"></use>
                 </svg>
              </span>   
             </div>
 
-            <div class="form-field">
-              <label for="comment">Коментарий</label>
-              <textarea class="form-comment" name="comment" placeholder="Ведите текст" id="comment"></textarea>
+            <div class="form-comment">
+              <label for="comment">Комментарий</label>
+              <textarea class="form-comment-text" name="comment" placeholder="Ведите текст" id="comment"></textarea>
             </div>
-        
-          </div>
          
-          <input class="form-input" type="checkbox" name="oferta" id="oferta" value="oferta">
-          <label class="modal-checkbox" for="oferta">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+          <input class="modal-checkbox visually-hidden" type="checkbox" name="oferta" id="modal-checkbox" value="oferta">
+          <label class="modal-checkbox" for="modal-checkbox"><span>
+            <svg class="check-icon" width="11" height="8">
+              <use href="./images/icons.svg#check"></use>
+            </svg>
+          </span>Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a></label>
   
           <button type="submit" class="button form-btn form-btn-send">Отправить</button>
      
