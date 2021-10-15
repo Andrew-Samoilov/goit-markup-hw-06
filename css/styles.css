@@ -756,6 +756,10 @@ li.item {
   display: block;
   margin: 0 auto;
 }
+.form-btn:hover {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 form .form-btn svg {
   margin-left: 10px;
@@ -788,6 +792,7 @@ form .form-btn svg {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   margin-right: 8px;
+  margin-left: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
